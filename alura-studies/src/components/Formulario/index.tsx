@@ -1,5 +1,5 @@
 import React from 'react';
-import Botao from '../Botao';
+import Botao from '../Botao/index';
 import style from './Formulario.module.scss';
 
 class Formulario extends React.Component {
@@ -23,7 +23,6 @@ class Formulario extends React.Component {
                         Tempo
                     </label>
                     <input 
-                    
                     type="time"
                     step="1"
                     name="tempo"
@@ -33,9 +32,9 @@ class Formulario extends React.Component {
                     required
                     />
                 </div>
-                <Botao 
+                <Botao>
                     Adicionar
-                />
+                </Botao>
             </form>
         )
     }
